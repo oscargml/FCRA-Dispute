@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Credit Dispute Letter Generator (PDF Download) | FCRADisputeHelper</title>
+<meta name="description" content="Fill out a short form and instantly generate a free, FCRA-compliant credit dispute letter for Equifax, Experian, or TransUnion. Download as PDF. Nothing is stored.">
+<meta name="keywords" content="credit dispute letter generator, FCRA dispute letter PDF, free dispute letter template, 609 dispute letter, 611 dispute letter">
+<link rel="canonical" href="https://fcradisputehelper.com/generator.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Credit Dispute Letter Generator">
+<meta property="og:description" content="Generate and download a free FCRA dispute letter in minutes.">
+<meta property="og:url" content="https://fcradisputehelper.com/generator.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b2545'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='%2313a463' font-family='Arial' font-weight='bold'%3EF%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8643026289824701" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a href="/" class="brand"><span class="mark">●</span> FCRADisputeHelper</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <div class="nav-links" id="nav-links">
+      <a href="/generator.html">Letter Generator</a>
+      <a href="/how-to-dispute.html">How to Dispute</a>
+      <a href="/credit-bureau-addresses.html">Bureau Addresses</a>
+      <a href="/faq.html">FAQ</a>
+    </div>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="crumbs"><a href="/">Home</a> › Dispute Letter Generator</div>
+</div>
+
+<section class="block" style="padding-top:28px;">
+  <div class="container">
+    <h1>Credit Dispute Letter Generator</h1>
+    <p style="max-width:720px;">Fill in the details below and your FCRA dispute letter builds itself on the right. When it looks good, download it as a PDF or copy the text. <strong>Everything stays in your browser — nothing is uploaded or saved.</strong></p>
+
+    <div class="callout" style="margin:18px 0 30px;">
+      <strong>Tip:</strong> Send one letter per bureau that shows the error, and mail it via <strong>USPS Certified Mail with Return Receipt</strong> so you have proof of the date. Enclose <em>copies</em> (never originals) of any supporting documents.
+    </div>
+
+    <div class="gen-layout">
+      <form id="dispute-form" autocomplete="off">
+        <fieldset>
+          <legend>1. Which bureau are you disputing with?</legend>
+          <div class="bureau-options">
+            <label><input type="radio" name="bureau" value="equifax" checked><span>Equifax</span></label>
+            <label><input type="radio" name="bureau" value="experian"><span>Experian</span></label>
+            <label><input type="radio" name="bureau" value="transunion"><span>TransUnion</span></label>
+          </div>
+          <p class="hint" style="margin-top:12px;">Not sure which one? Check the report that shows the error. Each bureau is a separate company and must be disputed individually.</p>
+        </fieldset>
+
+        <fieldset>
+          <legend>2. Your information</legend>
+          <div class="form-grid">
+            <div class="field full">
+              <label for="full-name">Full legal name</label>
+              <input type="text" id="full-name" placeholder="Jane A. Consumer">
+            </div>
+            <div class="field full">
+              <label for="address">Street address</label>
+              <input type="text" id="address" placeholder="123 Main Street, Apt 4">
+            </div>
+            <div class="field">
+              <label for="city">City</label>
+              <input type="text" id="city" placeholder="Austin">
+            </div>
+            <div class="field">
+              <label for="state">State</label>
+              <input type="text" id="state" maxlength="2" placeholder="TX" style="text-transform:uppercase;">
+            </div>
+            <div class="field">
+              <label for="zip">ZIP code</label>
+              <input type="text" id="zip" maxlength="10" placeholder="78701">
+            </div>
+            <div class="field">
+              <label for="ssn-last4">Last 4 of SSN <span style="font-weight:400;color:var(--muted);">(optional)</span></label>
+              <input type="text" id="ssn-last4" maxlength="4" placeholder="1234" inputmode="numeric">
+              <span class="hint">Helps the bureau match your file. Stays in your browser.</span>
+            </div>
+            <div class="field">
+              <label for="dob">Date of birth <span style="font-weight:400;color:var(--muted);">(optional)</span></label>
+              <input type="text" id="dob" placeholder="MM/DD/YYYY">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>3. The error you're disputing</legend>
+          <div class="form-grid">
+            <div class="field">
+              <label for="creditor">Creditor / account name</label>
+              <input type="text" id="creditor" placeholder="ABC Bank Card">
+            </div>
+            <div class="field">
+              <label for="account">Account number</label>
+              <input type="text" id="account" placeholder="****1234">
+              <span class="hint">A partial number is fine.</span>
+            </div>
+            <div class="field full">
+              <label for="error-type">Type of error</label>
+              <select id="error-type">
+                <option value="not-mine">This account is not mine</option>
+                <option value="balance">Incorrect balance owed</option>
+                <option value="late">Reported late, but paid on time</option>
+                <option value="paid">Paid/closed but reported as open or unpaid</option>
+                <option value="duplicate">Duplicate account listed twice</option>
+                <option value="status">Incorrect account status</option>
+                <option value="old">Past the 7-year reporting limit</option>
+                <option value="personal">Incorrect personal information</option>
+                <option value="inquiry">Unauthorized hard inquiry</option>
+                <option value="fraud">Result of identity theft / fraud</option>
+                <option value="other">Other inaccuracy</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="details">Explain what's wrong and what it should say</label>
+              <textarea id="details" placeholder="Example: This account shows a 30-day late payment in March 2025, but I paid on time. My bank statement confirms the payment posted on March 3, 2025."></textarea>
+              <span class="hint">Be specific and factual. State what is wrong and what the correct information is.</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="cta-row" style="justify-content:flex-start;">
+          <button type="button" id="download-pdf" class="btn">Download PDF</button>
+          <button type="button" id="copy-letter" class="btn btn-secondary">Copy Text</button>
+        </div>
+      </form>
+
+      <div>
+        <h2 style="margin-top:0;">Your Letter</h2>
+        <div class="preview" id="letter-preview"></div>
+        <p class="hint" style="margin-top:10px;">Print this, sign it by hand, and mail it. Keep a copy for your records.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ad-slot">
+  <small>Advertisement</small>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8643026289824701" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<section class="block alt">
+  <div class="container narrow">
+    <h2>What Happens After You Mail It?</h2>
+    <p>Once the credit bureau receives your dispute, the FCRA gives it generally <strong>30 days</strong> (up to 45 in some cases) to investigate. The bureau forwards your dispute to the furnisher, reviews the response, and must send you the written results plus a free updated copy of your report if anything changed.</p>
+    <p>If the item is corrected or deleted — great. If the bureau verifies the item but you still disagree, you can add a <strong>100-word statement of dispute</strong> to your file, escalate a complaint to the <a href="https://www.consumerfinance.gov/complaint/" rel="nofollow noopener" target="_blank">CFPB</a>, or consult a consumer-protection attorney. Keep every letter, receipt, and response.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div>
+        <h4>FCRADisputeHelper</h4>
+        <p>A free tool to help U.S. consumers exercise their rights under the Fair Credit Reporting Act and fix errors on their credit reports.</p>
+      </div>
+      <div>
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="/generator.html">Dispute Letter Generator</a></li>
+          <li><a href="/how-to-dispute.html">How to Dispute</a></li>
+          <li><a href="/credit-bureau-addresses.html">Bureau Addresses</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> FCRADisputeHelper.com — Not a law firm and not a credit-repair organization. This site provides general information, not legal advice. We do not collect or store your personal data.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/app.js"></script>
+</body>
+</html>
